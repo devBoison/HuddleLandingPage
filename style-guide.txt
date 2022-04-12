@@ -1,0 +1,26 @@
+Layout
+
+mobile: 375px;
+desktop: 14440px
+
+
+colors
+
+primary 
+ pink: #fd53c0
+ darkgreen: #01262f
+
+Neutral
+ grey: #f6fbff
+ white: #ffffff
+ very dark: #000000
+
+
+Typography
+
+Body Copy
+Font size: 14px
+
+Font
+Family: Red Hat Text
+Weights: 700
