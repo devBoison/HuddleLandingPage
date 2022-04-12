@@ -5,3 +5,28 @@
   --white: #ffffff;
   --verydark: #000000;
 }
+html{
+  box-sizing: border-box;
+}
+header{
+  width: 1297px;
+  height: 40px;
+  margin-top: 30px;
+}
+header img{
+  float: left;
+  width: 240px;
+  height: 38px;
+}
+
+.try-it-free-btn{
+  border-radius: 30px;
+  border: 2px solid var(--pink);
+  float: right;
+  height: 40px;
+  width: 136px;
+  color: var(--pink);
+  align-items: center;
+  justify-items: center;
+  background-color: unset;
+}
