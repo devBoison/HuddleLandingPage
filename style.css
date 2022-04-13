@@ -8,7 +8,6 @@
 html{
   box-sizing: border-box;
   font-size: 14px;
-  font-family: monospace;
 }
 /* body{
   
@@ -42,20 +41,6 @@ header img{
   margin: 0 auto;
   text-align: center;
 }
- h1{
-  /* height: 72px;
-  width: 1014px; */
-  text-align: center;
-  padding-top: 30px;
-  font-size: 2rem;
-  font-weight: bolder;
-}
-.hero-section h2{
-  width: 600px;
-  height: 90px;
-  text-align: center;
-  margin: 0 auto;
-} 
 .get-started-btn{
   border: solid var(--pink);
   background-color: var(--pink);
@@ -63,7 +48,7 @@ header img{
   color: var(--white);
   width: 400px;
   height: 80px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 20px;
 }
