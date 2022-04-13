@@ -5,7 +5,6 @@
 1. Structural 
 2. Typography 
 3. Components
-4. Classes & Identifiers
 */
 
 /* --------------------------------- */
@@ -49,17 +48,16 @@ header img {
   text-align: center;
 }
 
-
 /* 2. Typography */
 
 h1 {
+  text-align: center;
   font-size: 3rem;
   font-family: roboto;
   font-weight: 700;
 }
 .hero-heading {
   padding-top: 8rem;
-  text-align: center;
 }
 
 h2 {
@@ -70,11 +68,6 @@ h2 {
   font-family: roboto;
   font-weight: 300;
   font-size: 1.5rem;
-}
-h3 {
-  font-family: roboto;
-  font-weight: 300;
-  font-size: 1rem;
 }
 
 /* 3. Components */
@@ -89,8 +82,6 @@ h3 {
   justify-items: center;
   background-color: unset;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 .hero-section{
   height: 1157px;
   width: 1017px;
@@ -98,15 +89,8 @@ h3 {
   margin: 0 auto;
   text-align: center;
 }
-.get-started-btn{
-=======
 
 .get-started-btn {
->>>>>>> 3cc2de3200de5b5566ab875f8d8df91004d10c92
-=======
-
-.get-started-btn {
->>>>>>> 2b26e7f3fe96a2a5bed1d3082a97e0ad22787cd7
   border: solid var(--pink);
   background-color: var(--pink);
   border-radius: 50px;
@@ -116,38 +100,4 @@ h3 {
   font-size: 1.6rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 20px;
-}
-
-/* 4. Classes & Identifiers */
-.hero-section {
-  height: 1157px;
-  width: 1017px;
-  border: 1px solid palevioletred;
-  margin: 0 auto;
-  text-align: center;
-}
-.diagram-section {
-  width: 63rem;
-  height: 25rem;
-  border: 1px solid var(--pink);
-  margin: 5rem auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.diagram-section > div {
-  margin-top: 5rem;
-}
-div.hero-section > img {
-  width: 73rem;
-  height: 52rem;
-  margin-top: 6rem;
-}
-.diagram-stats {
-  font-size: 6rem;
-  margin: 0;
-}
-.diagram-description {
-  text-align: center;
-  font-size: 1.2rem;
 }
