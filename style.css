@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
 :root {
   --pink: #fd53c0;
   --darkgreen: #01262f;
@@ -5,26 +7,27 @@
   --white: #ffffff;
   --verydark: #000000;
 }
-html{
+html {
   box-sizing: border-box;
   font-size: 14px;
   font-family: monospace;
 }
-/* body{
-  
-} */
-header{
+body {
+  font-family: roboto;
+  font-weight: 300;
+}
+header {
   width: 1297px;
   height: 40px;
   margin-top: 30px;
 }
-header img{
+header img {
   float: left;
   width: 240px;
   height: 38px;
 }
 
-.try-it-free-btn{
+.try-it-free-btn {
   border-radius: 30px;
   border: 2px solid var(--pink);
   float: right;
@@ -35,14 +38,14 @@ header img{
   justify-items: center;
   background-color: unset;
 }
-.hero-section{
+.hero-section {
   height: 1157px;
   width: 1017px;
   border: 1px solid palevioletred;
   margin: 0 auto;
   text-align: center;
 }
- h1{
+h1 {
   /* height: 72px;
   width: 1014px; */
   text-align: center;
@@ -50,13 +53,13 @@ header img{
   font-size: 2rem;
   font-weight: bolder;
 }
-.hero-section h2{
+.hero-section h2 {
   width: 600px;
   height: 90px;
   text-align: center;
   margin: 0 auto;
-} 
-.get-started-btn{
+}
+.get-started-btn {
   border: solid var(--pink);
   background-color: var(--pink);
   border-radius: 50px;
