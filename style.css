@@ -13,6 +13,7 @@
 /* 1. Structural */
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 :root {
   --pink: #fd53c0;
@@ -20,35 +21,28 @@
   --grey: #f6fbff;
   --white: #ffffff;
   --verydark: #000000;
+  --bluegrey: #f6fbff;
 }
 
 html {
   font-size: 14px;
 }
 body {
+  width: 100%;
   font-family: roboto;
   font-weight: 300;
+  overflow-x: hidden;
 }
 header {
-  width: 1297px;
-  height: 40px;
-  margin-top: 30px;
+  width: 93rem;
+  height: 3rem;
+  margin-top: 2.1rem;
 }
 header img {
   float: left;
   width: 240px;
   height: 38px;
 }
-
-.hero-section {
-  height: 1157px;
-  width: 1017px;
-  border: 1px solid palevioletred;
-  margin: 0px auto;
-  margin-top: 20px;
-  text-align: center;
-}
-
 
 /* 2. Typography */
 
@@ -103,18 +97,17 @@ h3 {
 }
 
 /* 4. Classes & Identifiers */
+
 .hero-section {
-  height: 1157px;
-  width: 1017px;
-  border: 1px solid palevioletred;
+  height: 83rem;
+  width: 73rem;
   margin: 0 auto;
   text-align: center;
 }
 .diagram-section {
   width: 63rem;
   height: 25rem;
-  border: 1px solid var(--pink);
-  margin: 5rem auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,4 +127,75 @@ div.hero-section > img {
 .diagram-description {
   text-align: center;
   font-size: 1.2rem;
+}
+
+.grow-together-section > div img {
+  width: 40rem;
+  height: 40rem;
+  padding: 6rem 4rem;
+  margin-right: 5rem;
+}
+
+.grow-together-text {
+  width: 37.14rem;
+  height: 11rem;
+  margin: 14rem auto;
+}
+.grow-together-section {
+  display: flex;
+  width: 91rem;
+  height: 40rem;
+  background-size: cover;
+  margin: 0 auto;
+  z-index: 3;
+  position: relative;
+}
+.grow-together-container {
+  width: 100%;
+  height: auto;
+  background-color: var(--bluegrey);
+}
+#bg-top {
+  width: 100%;
+  height: 120px;
+  background-image: url("./images/bg-section-top-desktop-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 1590px;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+}
+#bg-bottom {
+  width: 100%;
+  height: 120px;
+  background-image: url("./images/bg-section-bottom-desktop-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 0;
+  top: 650px;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+}
+
+.flowing-conversation-section {
+  display: flex;
+  width: 86rem;
+  height: 40rem;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem auto;
+}
+.flowing-conversation-section > div {
+  width: 40%;
+  margin: 0 auto;
+}
+.flowing-conversation-section img {
+  width: 40rem;
+  height: 40rem;
+  padding: 5rem;
 }
