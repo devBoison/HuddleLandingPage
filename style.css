@@ -34,16 +34,14 @@ body {
   overflow-x: hidden;
 }
 header {
+  width: 100%;
+  height: auto;
+}
+nav {
   width: 93rem;
   height: 3rem;
-  margin-top: 2.1rem;
+  margin: 2.1rem auto;
 }
-header img {
-  float: left;
-  width: 240px;
-  height: 38px;
-}
-
 /* 2. Typography */
 
 h1 {
@@ -72,7 +70,7 @@ h3 {
 }
 
 /* 3. Components */
-.try-it-free-btn {
+.btn-inverse {
   border-radius: 30px;
   border: 2px solid var(--pink);
   float: right;
@@ -84,7 +82,7 @@ h3 {
   background-color: unset;
 }
 
-.get-started-btn {
+.btn-primary {
   border: solid var(--pink);
   background-color: var(--pink);
   border-radius: 50px;
@@ -95,7 +93,9 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 20px;
 }
-
+.nav-inline-btn {
+  display: inline;
+}
 /* 4. Classes & Identifiers */
 
 .hero-section {
