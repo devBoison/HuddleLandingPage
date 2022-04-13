@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
+/* -----------Styles---------- */
+/* 
+1. Structural 
+2. Typography 
+3. Components
+*/
+
+/* --------------------------------- */
+
+/* 1. Structural */
+* {
+  box-sizing: border-box;
+}
 :root {
   --pink: #fd53c0;
   --darkgreen: #01262f;
@@ -7,10 +20,9 @@
   --white: #ffffff;
   --verydark: #000000;
 }
+
 html {
-  box-sizing: border-box;
   font-size: 14px;
-  font-family: monospace;
 }
 body {
   font-family: roboto;
@@ -27,6 +39,38 @@ header img {
   height: 38px;
 }
 
+.hero-section {
+  height: 1157px;
+  width: 1017px;
+  border: 1px solid palevioletred;
+  margin: 0px auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* 2. Typography */
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: roboto;
+  font-weight: 700;
+}
+.hero-heading {
+  padding-top: 8rem;
+}
+
+h2 {
+  width: 600px;
+  height: 90px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+/* 3. Components */
 .try-it-free-btn {
   border-radius: 30px;
   border: 2px solid var(--pink);
@@ -38,27 +82,7 @@ header img {
   justify-items: center;
   background-color: unset;
 }
-.hero-section {
-  height: 1157px;
-  width: 1017px;
-  border: 1px solid palevioletred;
-  margin: 0 auto;
-  text-align: center;
-}
-h1 {
-  /* height: 72px;
-  width: 1014px; */
-  text-align: center;
-  padding-top: 30px;
-  font-size: 2rem;
-  font-weight: bolder;
-}
-.hero-section h2 {
-  width: 600px;
-  height: 90px;
-  text-align: center;
-  margin: 0 auto;
-}
+
 .get-started-btn {
   border: solid var(--pink);
   background-color: var(--pink);
