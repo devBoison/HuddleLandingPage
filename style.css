@@ -118,6 +118,7 @@ h3 {
   width: 320px;
   height: 48px;
   background-color: var(--white);
+  padding-left: 1rem;
 }
 .subscribe-btn {
   margin-left: 2.4rem;
