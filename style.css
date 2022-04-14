@@ -178,35 +178,48 @@ div.hero-section > img {
 .grow-together-section,
 .your-users-section {
   display: flex;
-  width: 91rem;
-  height: 40rem;
   background-size: cover;
   margin: 0 auto;
   z-index: 3;
   position: relative;
 }
+.your-users-section {
+  margin-top: -20rem;
+}
 .grow-together-container,
 .your-users-section-container {
   width: 100%;
-  height: auto;
   background-color: var(--bluegrey);
+  margin: 0 auto;
 }
-#bg-top {
-  width: 100%;
+#grow-together-bg-top,
+#your-users-bg-top {
   height: 120px;
+  width: 100%;
   background-image: url("./images/bg-section-top-desktop-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
+  position: relative;
   left: 0;
-  top: 1590px;
   z-index: 2;
   display: block;
   margin: 0 auto;
 }
-#bg-bottom {
+
+#grow-together-bg-top {
+  background-image: url("./images/bg-section-top-desktop-1.svg");
+  top: 9.5rem;
+}
+
+#your-users-bg-top {
+  position: absolute;
+  top: 234rem;
+}
+
+#grow-together-bg-bottom,
+#your-users-bg-bottom {
+  height: 9rem;
   width: 100%;
-  height: 120px;
   background-image: url("./images/bg-section-bottom-desktop-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -218,13 +231,26 @@ div.hero-section > img {
   margin: 0 auto;
 }
 
-.flowing-conversation-section {
-  display: flex;
-  width: 86rem;
+#your-users-bg-bottom {
+  top: 29rem;
+}
+.flowing-conversation-container {
+  width: 100%;
   height: 40rem;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8rem auto;
+  padding: 20rem 0;
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+}
+.flowing-conversation-section {
+  width: 86rem;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rem auto;
 }
 .flowing-conversation-section > div {
   width: 40%;
@@ -239,7 +265,8 @@ div.hero-section > img {
 .cta-section {
   width: 49rem;
   height: 13rem;
-  margin: 10rem auto;
+  margin: 20rem auto;
+  margin-bottom: 12rem;
   text-align: center;
 }
 footer {
@@ -251,6 +278,22 @@ div.footer-container {
   background-color: var(--darkgreen);
   color: var(--white);
   display: flex;
+  width: 100%;
+  height: 40rem;
+  margin: 0 auto;
+}
+#footer-bg-top {
+  width: 100%;
+  height: 11rem;
+  background-image: url("./images/bg-footer-top-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 0%;
+  top: 90%;
+  z-index: 4;
+  display: block;
+  margin: 0 auto;
 }
 
 div.footer-container > div {
