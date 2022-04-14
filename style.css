@@ -1,25 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/* -----------Styles---------- */
+/* 
+1. Structural 
+2. Typography 
+3. Components
+4. Classes & Identifiers
+*/
+
+/* --------------------------------- */
+
+/* 1. Structural */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 :root {
   --pink: #fd53c0;
   --darkgreen: #01262f;
   --grey: #f6fbff;
   --white: #ffffff;
   --verydark: #000000;
-}
-html{
-  box-sizing: border-box;
-}
-header{
-  width: 1297px;
-  height: 40px;
-  margin-top: 30px;
-}
-header img{
-  float: left;
-  width: 240px;
-  height: 38px;
+  --bluegrey: #f6fbff;
 }
 
-.try-it-free-btn{
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  font-family: roboto;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  height: auto;
+}
+nav {
+  width: 93rem;
+  height: 3rem;
+  margin: 2.1rem auto;
+}
+/* 2. Typography */
+
+h1 {
+  font-size: 3rem;
+  font-family: roboto;
+  font-weight: 700;
+}
+.hero-heading {
+  padding-top: 8rem;
+  text-align: center;
+}
+
+h2 {
+  width: 600px;
+  height: 90px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+h3 {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* 3. Components */
+.btn-inverse {
   border-radius: 30px;
   border: 2px solid var(--pink);
   float: right;
@@ -29,4 +81,133 @@ header img{
   align-items: center;
   justify-items: center;
   background-color: unset;
+}
+
+.btn-primary {
+  border: solid var(--pink);
+  background-color: var(--pink);
+  border-radius: 50px;
+  color: var(--white);
+  width: 400px;
+  height: 80px;
+  font-size: 1.6rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px;
+}
+.nav-inline-btn {
+  display: inline;
+}
+/* 4. Classes & Identifiers */
+
+.hero-section {
+  height: 83rem;
+  width: 73rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.diagram-section {
+  width: 63rem;
+  height: 25rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.diagram-section > div {
+  margin-top: 5rem;
+}
+div.hero-section > img {
+  width: 73rem;
+  height: 52rem;
+  margin-top: 6rem;
+}
+.diagram-stats {
+  font-size: 6rem;
+  margin: 0;
+}
+.diagram-description {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.grow-together-section > div img,
+.your-users-section > div img {
+  width: 40rem;
+  height: 40rem;
+  padding: 6rem 4rem;
+  margin-right: 5rem;
+}
+
+.grow-together-text,
+.your-users-section-text {
+  width: 37.14rem;
+  height: 11rem;
+  margin: 14rem auto;
+}
+.grow-together-section,
+.your-users-section {
+  display: flex;
+  width: 91rem;
+  height: 40rem;
+  background-size: cover;
+  margin: 0 auto;
+  z-index: 3;
+  position: relative;
+}
+.grow-together-container,
+.your-users-section-container {
+  width: 100%;
+  height: auto;
+  background-color: var(--bluegrey);
+}
+#bg-top {
+  width: 100%;
+  height: 120px;
+  background-image: url("./images/bg-section-top-desktop-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 1590px;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+}
+#bg-bottom {
+  width: 100%;
+  height: 120px;
+  background-image: url("./images/bg-section-bottom-desktop-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 0;
+  top: 650px;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+}
+
+.flowing-conversation-section {
+  display: flex;
+  width: 86rem;
+  height: 40rem;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem auto;
+}
+.flowing-conversation-section > div {
+  width: 40%;
+  margin: 0 auto;
+}
+.flowing-conversation-section img {
+  width: 40rem;
+  height: 40rem;
+  padding: 5rem;
+}
+
+.cta-section {
+  width: 49rem;
+  height: 13rem;
+  margin: 10rem auto;
+  text-align: center;
 }
