@@ -26,6 +26,7 @@
 
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 body {
   width: 100%;
@@ -129,19 +130,22 @@ div.hero-section > img {
   font-size: 1.2rem;
 }
 
-.grow-together-section > div img {
+.grow-together-section > div img,
+.your-users-section > div img {
   width: 40rem;
   height: 40rem;
   padding: 6rem 4rem;
   margin-right: 5rem;
 }
 
-.grow-together-text {
+.grow-together-text,
+.your-users-section-text {
   width: 37.14rem;
   height: 11rem;
   margin: 14rem auto;
 }
-.grow-together-section {
+.grow-together-section,
+.your-users-section {
   display: flex;
   width: 91rem;
   height: 40rem;
@@ -150,7 +154,8 @@ div.hero-section > img {
   z-index: 3;
   position: relative;
 }
-.grow-together-container {
+.grow-together-container,
+.your-users-section-container {
   width: 100%;
   height: auto;
   background-color: var(--bluegrey);
@@ -198,4 +203,11 @@ div.hero-section > img {
   width: 40rem;
   height: 40rem;
   padding: 5rem;
+}
+
+.cta-section {
+  width: 49rem;
+  height: 13rem;
+  margin: 10rem auto;
+  text-align: center;
 }
