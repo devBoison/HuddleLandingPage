@@ -22,6 +22,7 @@
   --white: #ffffff;
   --verydark: #000000;
   --bluegrey: #f6fbff;
+  --lightblue: #00c7fa;
 }
 
 html {
@@ -69,6 +70,13 @@ h3 {
   font-weight: 300;
   font-size: 1rem;
 }
+.footer-heading {
+  text-align: left;
+  font-weight: 600;
+}
+.footer-social-icons-heading {
+  line-height: 2;
+}
 
 /* 3. Components */
 .btn-inverse {
@@ -96,6 +104,28 @@ h3 {
 }
 .nav-inline-btn {
   display: inline;
+}
+.subscribe-btn,
+.subscribe-input {
+  width: 11.4rem;
+  height: 3.4rem;
+  background-color: var(--pink);
+  outline: unset;
+  border: unset;
+  border-radius: 4px;
+}
+.subscribe-input {
+  width: 320px;
+  height: 48px;
+  background-color: var(--white);
+}
+.subscribe-btn {
+  margin-left: 2.4rem;
+  color: var(--white);
+}
+
+button {
+  cursor: pointer;
 }
 /* 4. Classes & Identifiers */
 
@@ -210,4 +240,42 @@ div.hero-section > img {
   height: 13rem;
   margin: 10rem auto;
   text-align: center;
+}
+footer {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1rem;
+}
+div.footer-container {
+  background-color: var(--darkgreen);
+  color: var(--white);
+  display: flex;
+}
+
+div.footer-container > div {
+  width: 40%;
+  margin: 10rem;
+}
+
+div.footer-division-1 > path {
+  fill: var(--white);
+  outline: var(--white);
+}
+.footer-logo {
+  padding-bottom: 2rem;
+}
+.footer-cta-section {
+  width: 37.1rem;
+  height: 15.1rem;
+  padding-top: 1rem;
+  line-height: 2;
+}
+.social-icons > svg {
+  margin-right: 1.2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.social-icons > svg :hover {
+  fill: var(--lightblue);
 }
