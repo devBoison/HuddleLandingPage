@@ -100,7 +100,10 @@ h3 {
   height: 80px;
   font-size: 1.6rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-top: 20px;
+  margin: 0 auto;
+}
+button.btn-primary {
+  margin-top: 4rem;
 }
 .nav-inline-btn {
   display: inline;
@@ -130,12 +133,6 @@ button {
 }
 /* 4. Classes & Identifiers */
 
-.hero-section {
-  height: 83rem;
-  width: 73rem;
-  margin: 0 auto;
-  text-align: center;
-}
 .diagram-section {
   width: 63rem;
   height: 25rem;
@@ -147,10 +144,14 @@ button {
 .diagram-section > div {
   margin-top: 5rem;
 }
+div.hero-section {
+  width: 100%;
+  text-align: center;
+}
 div.hero-section > img {
-  width: 73rem;
-  height: 52rem;
-  margin-top: 6rem;
+  width: 68rem;
+  height: 42rem;
+  margin: 100px auto;
 }
 .diagram-stats {
   font-size: 6rem;
@@ -159,6 +160,9 @@ div.hero-section > img {
 .diagram-description {
   text-align: center;
   font-size: 1.2rem;
+}
+.diagram-mobile {
+  display: none;
 }
 
 .grow-together-section > div img,
@@ -282,6 +286,7 @@ div.footer-container {
   height: 40rem;
   margin: 0 auto;
 }
+
 #footer-bg-top {
   width: 100%;
   height: 11rem;
@@ -322,4 +327,212 @@ div.footer-division-1 > path {
 
 .social-icons > svg :hover {
   fill: var(--lightblue);
+}
+
+.flowing-conversation-section-mobile,
+.your-users-section-mobile,
+.grow-together-section-mobile > div img,
+.your-users-section-mobile > div img,
+.flowing-conversation-section-mobile > div img,
+.grow-together-text-mobile,
+.your-users-section-text-mobile,
+.flowing-conversation-text-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 990px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    width: 100%;
+    font-family: roboto;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: auto;
+  }
+  nav {
+    width: 90%;
+    height: 3rem;
+  }
+  /* 2. Typography */
+
+  h1 {
+    font-size: 32px;
+    font-family: roboto;
+    font-weight: 600;
+  }
+  .hero-heading {
+    padding-top: 8rem;
+    text-align: center;
+  }
+
+  h2 {
+    width: 300px;
+    height: 90px;
+    text-align: center;
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  h3 {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  p {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  .btn-primary {
+    border: solid var(--pink);
+    background-color: var(--pink);
+    border-radius: 50px;
+    color: var(--white);
+    width: 400px;
+    height: 80px;
+    font-size: 1.6rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 6rem;
+  }
+  .hero-section {
+    width: 100%;
+    height: 60rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  div.hero-section > img {
+    width: 80%;
+    height: auto;
+    margin-top: 8rem;
+    margin-bottom: 0;
+  }
+  .diagram-section {
+    width: 100%;
+    height: 25rem;
+    margin: 0 auto;
+    /* margin-top: -100px; */
+    display: block;
+    text-align: center;
+  }
+  .diagram-section > div {
+    padding: 10px;
+  }
+  div.diagram > img {
+    margin-left: -120px;
+  }
+  .diagram-stats {
+    font-size: 6rem;
+    margin: 0;
+  }
+  .diagram-description {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  nav img,
+  .btn-inverse {
+    width: 35%;
+    height: auto;
+    margin-left: 0 0 10px 10px;
+  }
+  .btn-primary {
+    width: 70%;
+    height: 60px;
+  }
+  div.diagram-section,
+  div.grow-together-section,
+  div.your-users-section,
+  div.your-users-section-container {
+    display: none;
+  }
+
+  .grow-together-section-mobile,
+  .your-users-section-mobile,
+  .flowing-conversation-section-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .diagram-container-mobile,
+  .your-users-section-container-mobile,
+  .grow-together-container-mobile,
+  .flowing-conversation-container-mobile {
+    border: 1px solid #fff;
+    height: 420px;
+    margin-bottom: 80px;
+  }
+  .grow-together-text-mobile,
+  .your-users-section-text-mobile,
+  .flowing-conversation-text-mobile,
+  .diagram-mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+  .diagram-mobile {
+    margin: 20px;
+    padding: 20px;
+  }
+  .diagram-mobile > img {
+    margin-left: -100px;
+  }
+  .grow-together-section-mobile > div img,
+  .your-users-section-mobile > div img,
+  .flowing-conversation-section-mobile > div img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .flowing-conversation-section,
+  .flowing-conversation-container {
+    display: none;
+  }
+
+  .cta-section {
+    width: 100%;
+    height: 13rem;
+    margin: 10rem auto;
+    margin-bottom: 12rem;
+    text-align: center;
+  }
+  div.footer-container {
+    display: none;
+  }
+
+  #footer-bg-top {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 801px) {
+  .diagram-section {
+    margin-top: -200px;
+  }
+}
+
+@media only screen and (min-width: 384px) and (max-width: 560px) {
+  h1 {
+    font-size: 34px;
+    font-family: roboto;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 528px) {
+  h1 {
+    font-size: 48px;
+    font-family: roboto;
+    font-weight: 600;
+  }
 }
