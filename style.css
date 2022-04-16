@@ -31,7 +31,7 @@ html {
 }
 body {
   width: 100%;
-  font-family: roboto;
+  font-family: roboto, sans-serif;
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -164,7 +164,6 @@ div.hero-section > img {
 .diagram-mobile {
   display: none;
 }
-
 .grow-together-section > div img,
 .your-users-section > div img {
   width: 40rem;
@@ -417,7 +416,6 @@ div.footer-division-1 > path {
     width: 100%;
     height: 25rem;
     margin: 0 auto;
-    /* margin-top: -100px; */
     display: block;
     text-align: center;
   }
@@ -426,14 +424,6 @@ div.footer-division-1 > path {
   }
   div.diagram > img {
     margin-left: -120px;
-  }
-  .diagram-stats {
-    font-size: 6rem;
-    margin: 0;
-  }
-  .diagram-description {
-    text-align: center;
-    font-size: 1.2rem;
   }
   nav img,
   .btn-inverse {
@@ -454,19 +444,44 @@ div.footer-division-1 > path {
 
   .grow-together-section-mobile,
   .your-users-section-mobile,
-  .flowing-conversation-section-mobile {
+  .flowing-conversation-section-mobile,
+  .diagram-section-mobile {
     display: block;
     width: 100%;
     height: auto;
     margin: 0 auto;
   }
-  .diagram-container-mobile,
+
+  div.diagram-container-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+    margin-bottom: 100px;
+  }
+
+  .diagram-stats {
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+  }
+  .diagram-description {
+    text-align: center;
+    font-size: 12px;
+  }
+
   .your-users-section-container-mobile,
   .grow-together-container-mobile,
   .flowing-conversation-container-mobile {
-    border: 1px solid #fff;
-    height: 420px;
-    margin-bottom: 80px;
+    height: 540px;
+    margin-bottom: 100px;
+    background-color: var(--bluegrey);
+    padding: 100px 0;
+  }
+  .flowing-conversation-container-mobile,
+  .diagram-container-mobile {
+    background-color: var(--white);
   }
   .grow-together-text-mobile,
   .your-users-section-text-mobile,
@@ -478,13 +493,12 @@ div.footer-division-1 > path {
     padding: 10px;
     text-align: center;
   }
+
   .diagram-mobile {
-    margin: 20px;
-    padding: 20px;
+    border: 1px solid #fff;
+    margin: 100px 0;
   }
-  .diagram-mobile > img {
-    margin-left: -100px;
-  }
+
   .grow-together-section-mobile > div img,
   .your-users-section-mobile > div img,
   .flowing-conversation-section-mobile > div img {
@@ -513,6 +527,15 @@ div.footer-division-1 > path {
 
   #footer-bg-top {
     display: none;
+  }
+
+  div.footer-container-mobile {
+    width: 100%;
+    height: 450px;
+    background-color: var(--darkgreen);
+    padding: 0 20px;
+    font-family: roboto, sans-serif;
+    font-weight: 300;
   }
 }
 
