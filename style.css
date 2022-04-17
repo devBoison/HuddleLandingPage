@@ -40,7 +40,7 @@ header {
   height: auto;
 }
 nav {
-  width: 93rem;
+  width: 90%;
   height: 3rem;
   margin: 2.1rem auto;
 }
@@ -156,6 +156,9 @@ div.hero-section > img {
   width: 68rem;
   height: 42rem;
   margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .diagram-stats {
   font-size: 6rem;
@@ -190,14 +193,18 @@ div.hero-section > img {
   z-index: 3;
   position: relative;
 }
-.your-users-section {
+/* .your-users-section {
   margin-top: -20rem;
-}
+} */
 .grow-together-container,
 .your-users-section-container {
   width: 100%;
+  height: 450px;
   background-color: var(--bluegrey);
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #grow-together-bg-top,
 #your-users-bg-top {
@@ -205,7 +212,7 @@ div.hero-section > img {
   width: 100%;
   background-image: url("./images/bg-section-top-desktop-1.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   position: relative;
   left: 0;
   z-index: 2;
@@ -215,12 +222,14 @@ div.hero-section > img {
 
 #grow-together-bg-top {
   background-image: url("./images/bg-section-top-desktop-1.svg");
-  top: 9.5rem;
+  top: 10rem;
+  width: 100%;
 }
 
 #your-users-bg-top {
   position: absolute;
-  top: 228rem;
+  top: 240rem;
+  width: 100%;
 }
 
 #grow-together-bg-bottom,
@@ -232,12 +241,13 @@ div.hero-section > img {
   background-size: cover;
   position: relative;
   left: 0;
-  top: 650px;
   z-index: 2;
   display: block;
   margin: 0 auto;
 }
-
+#grow-together-bg-bottom {
+  top: 540px;
+}
 #your-users-bg-bottom {
   top: 29rem;
 }
@@ -270,9 +280,9 @@ div.hero-section > img {
 }
 
 .cta-section {
-  width: 49rem;
+  width: 60%;
   height: 13rem;
-  margin: 20rem auto;
+  margin: 10rem auto;
   margin-bottom: 12rem;
   text-align: center;
 }
@@ -280,13 +290,18 @@ footer {
   font-family: roboto;
   font-weight: 300;
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
 }
+
 div.footer-container {
+  width: 100%;
+  height: 40rem;
   background-color: var(--darkgreen);
   color: var(--white);
   display: flex;
-  width: 100%;
-  height: 40rem;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -297,15 +312,14 @@ div.footer-container {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  left: 0%;
-  top: 90%;
   z-index: 4;
-  display: block;
   margin: 0 auto;
+  margin-bottom: -40px;
 }
 
 div.footer-container > div {
-  width: 40%;
+  width: 345px;
+  height: 345px;
   margin: 10rem;
 }
 
@@ -343,10 +357,10 @@ div.footer-division-1 > path {
   display: none;
 }
 
-#grow-together-bg-top,
-#your-users-bg-top,
-#grow-together-bg-bottom,
-#your-users-bg-bottom {
+#grow-together-bg-top-mobile,
+#your-users-bg-top-mobile,
+#grow-together-bg-bottom-mobile,
+#your-users-bg-bottom-mobile {
   display: none;
 }
 
@@ -372,6 +386,11 @@ div.footer-division-1 > path {
   nav {
     width: 90%;
     height: 3rem;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   /* 2. Typography */
 
@@ -414,7 +433,7 @@ div.footer-division-1 > path {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-top: 6rem;
   }
-  .hero-section {
+  div.hero-section {
     width: 100%;
     height: 60rem;
     margin: 0 auto;
@@ -466,10 +485,30 @@ div.footer-division-1 > path {
     height: auto;
     margin: 0 auto;
   }
-  .grow-together-bg-top-mobile {
+  #grow-together-bg-top-mobile,
+  #grow-together-bg-bottom-mobile,
+  #your-users-bg-top-mobile,
+  #your-users-bg-bottom-mobile {
+    width: 100%;
+    height: 240px;
     background-image: url("./images/bg-section-top-mobile-1.svg");
+    background-repeat: no-repeat;
     position: absolute;
+    top: 244%;
   }
+  #grow-together-bg-bottom-mobile {
+    background-image: url("./images/bg-section-bottom-mobile-1.svg");
+    top: 348%;
+  }
+  #your-users-bg-top-mobile {
+    background-image: url("./images/bg-section-top-mobile-2.svg");
+    top: 456%;
+  }
+  #your-users-bg-bottom-mobile {
+    background-image: url("./images/bg-section-bottom-mobile-2.svg");
+    top: 558%;
+  }
+
   div.diagram-container-mobile {
     width: 100%;
     display: flex;
@@ -535,7 +574,7 @@ div.footer-division-1 > path {
   .cta-section {
     width: 100%;
     height: 13rem;
-    margin: 10rem auto;
+    margin: 0rem auto;
     margin-bottom: 12rem;
     text-align: center;
   }
