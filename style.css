@@ -535,26 +535,46 @@ div.footer-division-1 > path {
   .cta-section {
     width: 100%;
     height: 13rem;
-    margin: 10rem auto;
-    margin-bottom: 12rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
     text-align: center;
   }
   div.footer-container {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    height: fit-content;
+    text-align: justify;
+    font-size: 3rem;
+    
+  }
+  .footer-division-2{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    text-align: justify;
+    font-size: 23px;
+    font-weight: 400;
+  }
+  .footer-division-1{
+    font-size: 16px;
+    text-align: justify;
+    margin: 0;
+  }
+  .footer-heading{
+    text-align: justify;
+    margin-left: 0;
+  }
+  #footer-bg-top{
     display: none;
   }
-
-  #footer-bg-top {
-    display: none;
-  }
-
-  div.footer-container-mobile {
+  #footer-bg-top-mobile{
+    background-image: url(./images/bg-footer-top-mobile.svg);
     width: 100%;
-    height: 450px;
-    background-color: var(--darkgreen);
-    padding: 0 20px;
-    font-family: roboto, sans-serif;
-    font-weight: 300;
+    height: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+
+
 }
 
 @media only screen and (min-width: 460px) and (max-width: 801px) {
