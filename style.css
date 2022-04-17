@@ -72,7 +72,11 @@ h3 {
 }
 .footer-heading {
   text-align: left;
+  font-size: 2rem;
   font-weight: 600;
+}
+.footer-text {
+  font-size: 12rem;
 }
 .footer-social-icons-heading {
   line-height: 2;
@@ -216,7 +220,7 @@ div.hero-section > img {
 
 #your-users-bg-top {
   position: absolute;
-  top: 234rem;
+  top: 228rem;
 }
 
 #grow-together-bg-bottom,
@@ -338,7 +342,11 @@ div.footer-division-1 > path {
 .flowing-conversation-text-mobile {
   display: none;
 }
-div.footer-container-mobile {
+
+#grow-together-bg-top,
+#your-users-bg-top,
+#grow-together-bg-bottom,
+#your-users-bg-bottom {
   display: none;
 }
 
@@ -352,6 +360,10 @@ div.footer-container-mobile {
     font-family: roboto;
     font-weight: 300;
     overflow-x: hidden;
+  }
+  body > img {
+    width: 80%;
+    height: auto;
   }
   header {
     width: 100%;
@@ -454,7 +466,10 @@ div.footer-container-mobile {
     height: auto;
     margin: 0 auto;
   }
-
+  .grow-together-bg-top-mobile {
+    background-image: url("./images/bg-section-top-mobile-1.svg");
+    position: absolute;
+  }
   div.diagram-container-mobile {
     width: 100%;
     display: flex;
