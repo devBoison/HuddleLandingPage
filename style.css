@@ -294,7 +294,6 @@ div.footer-container {
   height: 40rem;
   margin: 0 auto;
 }
-
 #footer-bg-top {
   width: 100%;
   height: 11rem;
@@ -473,19 +472,19 @@ div.footer-division-1 > path {
     background-image: url("./images/bg-section-top-mobile-1.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 1480px;
+    top: 244%;
   }
   #grow-together-bg-bottom-mobile {
     background-image: url("./images/bg-section-bottom-mobile-1.svg");
-    top: 2120px;
+    top: 348%;
   }
   #your-users-bg-top-mobile {
     background-image: url("./images/bg-section-top-mobile-2.svg");
-    top: 2760px;
+    top: 456%;
   }
   #your-users-bg-bottom-mobile {
     background-image: url("./images/bg-section-bottom-mobile-2.svg");
-    top: 3400px;
+    top: 558%;
   }
 
   div.diagram-container-mobile {
@@ -562,47 +561,65 @@ div.footer-division-1 > path {
   div.footer-container {
     display: flex;
     flex-flow: column-reverse wrap;
-    height: fit-content;
+    height: auto;
     text-align: justify;
-    font-size: 25px;
-    align-items: flex-start;
-    padding-left: 30px;
-    padding-right: 0px;
+      /* padding-left: 30px;
+      padding-right: 0px;  */
   }
-  .footer-division-2 {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    text-align: justify;
-    /* font-size: 23px; */
-    font-weight: 400;
-    margin-top: -40px;
-    margin-left: -160px;
-  }
-  .footer-division-1 > div {
+  div.footer-container > div{
+    width: 80%;
+    margin: 30px;
+}
+  .footer-division-2 > div{
+     display: flex; 
+     flex-flow: row-reverse wrap;
     text-align: justify;
     font-size: 23px;
-    margin-left: -160px;
-    margin-top: -15px;
+    font-weight: 400;
+    margin-bottom: 120px;
   }
-  .footer-heading {
+  .footer-division-1 > div{
+    text-align: justify;  
+    font-size: 23px;
+  }
+  .footer-logo {
+    padding-top: 7rem;
+    color: #fff;
+  }
+  svg.fl-bg{
+    padding-top:7rem ;
+  }
+  .footer-heading{
     text-align: justify;
     margin-left: 0;
   }
-  #footer-bg-top {
+  .footer-cta-section {
+    width: 100%;
+    height: 15.1rem;
+    padding-top: 1rem; 
+    line-height: 2;
+  }
+  #footer-bg-top{
     display: none;
   }
-  #footer-bg-top-mobile {
+  #footer-bg-top-mobile{
     background-image: url(./images/bg-footer-top-mobile.svg);
     width: 100%;
     height: 5rem;
     background-size: cover;
     background-repeat: no-repeat;
   }
-
-  .subscribe-btn {
+  .footer-subscription{
+    display:block;
+    width: 100%;
+    height: auto;
+    margin-top: 30px
+  } 
+  .subscribe-btn{
     margin-right: -60px;
     margin-left: 160px;
-    margin-top: 10px;
+    margin-top: 20px;
+    
   }
   #grow-together-bg-top,
   #your-users-bg-top,
