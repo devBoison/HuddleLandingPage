@@ -72,7 +72,11 @@ h3 {
 }
 .footer-heading {
   text-align: left;
+  font-size: 2rem;
   font-weight: 600;
+}
+.footer-text {
+  font-size: 12rem;
 }
 .footer-social-icons-heading {
   line-height: 2;
@@ -168,14 +172,15 @@ div.hero-section > img {
 .your-users-section > div img {
   width: 40rem;
   height: 40rem;
-  padding: 6rem 4rem;
-  margin-right: 5rem;
+  /* padding: 6rem 4rem;
+  margin-right: 5rem; */
+  margin: 0;
 }
 
 .grow-together-text,
 .your-users-section-text {
   width: 37.14rem;
-  height: 11rem;
+  height: 10rem;
   margin: 14rem auto;
 }
 .grow-together-section,
@@ -186,24 +191,27 @@ div.hero-section > img {
   z-index: 3;
   position: relative;
 }
-.your-users-section {
-  margin-top: -20rem;
-}
+
 .grow-together-container,
 .your-users-section-container {
   width: 100%;
   background-color: var(--bluegrey);
-  margin: 0 auto;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rem 0;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
 }
 #grow-together-bg-top,
 #your-users-bg-top {
-  height: 120px;
   width: 100%;
+  height: 340px;
   background-image: url("./images/bg-section-top-desktop-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  left: 0;
+  position: absolute;
   z-index: 2;
   display: block;
   margin: 0 auto;
@@ -211,31 +219,31 @@ div.hero-section > img {
 
 #grow-together-bg-top {
   background-image: url("./images/bg-section-top-desktop-1.svg");
-  top: 9.5rem;
+  top: 1620px;
 }
 
 #your-users-bg-top {
   position: absolute;
-  top: 234rem;
+  top: 3400px;
 }
 
 #grow-together-bg-bottom,
 #your-users-bg-bottom {
-  height: 9rem;
   width: 100%;
+  height: 9rem;
   background-image: url("./images/bg-section-bottom-desktop-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  left: 0;
-  top: 650px;
+  position: absolute;
   z-index: 2;
   display: block;
   margin: 0 auto;
 }
-
+#grow-together-bg-bottom {
+  top: 2490px;
+}
 #your-users-bg-bottom {
-  top: 29rem;
+  top: 4150px;
 }
 .flowing-conversation-container {
   width: 100%;
@@ -266,12 +274,13 @@ div.hero-section > img {
 }
 
 .cta-section {
-  width: 49rem;
+  width: 80%;
   height: 13rem;
   margin: 20rem auto;
   margin-bottom: 12rem;
   text-align: center;
 }
+
 footer {
   font-family: roboto;
   font-weight: 300;
@@ -285,7 +294,6 @@ div.footer-container {
   height: 40rem;
   margin: 0 auto;
 }
-
 #footer-bg-top {
   width: 100%;
   height: 11rem;
@@ -350,6 +358,10 @@ div.footer-division-1 > path {
     font-weight: 300;
     overflow-x: hidden;
   }
+  body > img {
+    width: 80%;
+    height: auto;
+  }
   header {
     width: 100%;
     height: auto;
@@ -400,7 +412,7 @@ div.footer-division-1 > path {
     margin-top: 6rem;
   }
   .hero-section {
-    width: 100%;
+    width: 90%;
     height: 60rem;
     margin: 0 auto;
     text-align: center;
@@ -450,6 +462,29 @@ div.footer-division-1 > path {
     width: 100%;
     height: auto;
     margin: 0 auto;
+  }
+  #grow-together-bg-top-mobile,
+  #grow-together-bg-bottom-mobile,
+  #your-users-bg-top-mobile,
+  #your-users-bg-bottom-mobile {
+    width: 100%;
+    height: 240px;
+    background-image: url("./images/bg-section-top-mobile-1.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 244%;
+  }
+  #grow-together-bg-bottom-mobile {
+    background-image: url("./images/bg-section-bottom-mobile-1.svg");
+    top: 348%;
+  }
+  #your-users-bg-top-mobile {
+    background-image: url("./images/bg-section-top-mobile-2.svg");
+    top: 456%;
+  }
+  #your-users-bg-bottom-mobile {
+    background-image: url("./images/bg-section-bottom-mobile-2.svg");
+    top: 558%;
   }
 
   div.diagram-container-mobile {
@@ -510,32 +545,83 @@ div.footer-division-1 > path {
   }
 
   .flowing-conversation-section,
-  .flowing-conversation-container {
+  .flowing-conversation-container,
+  .grow-together-container,
+  .your-users-section-container {
     display: none;
   }
 
   .cta-section {
     width: 100%;
     height: 13rem;
-    margin: 10rem auto;
-    margin-bottom: 12rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
     text-align: center;
   }
   div.footer-container {
-    display: none;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    height: auto;
+    text-align: justify;
+      /* padding-left: 30px;
+      padding-right: 0px;  */
   }
-
-  #footer-bg-top {
-    display: none;
+  div.footer-container > div{
+    width: 80%;
+    margin: 30px;
+}
+  .footer-division-2 > div{
+     display: flex; 
+     flex-flow: row-reverse wrap;
+    text-align: justify;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 120px;
   }
-
-  div.footer-container-mobile {
+  .footer-division-1 > div{
+    text-align: justify;  
+    font-size: 23px;
+  }
+  .footer-logo {
+    padding-top: 7rem;
+  }
+  .footer-heading{
+    text-align: justify;
+    margin-left: 0;
+  }
+  .footer-cta-section {
     width: 100%;
-    height: 450px;
-    background-color: var(--darkgreen);
-    padding: 0 20px;
-    font-family: roboto, sans-serif;
-    font-weight: 300;
+    height: 15.1rem;
+    padding-top: 1rem; 
+    line-height: 2;
+  }
+  #footer-bg-top{
+    display: none;
+  }
+  #footer-bg-top-mobile{
+    background-image: url(./images/bg-footer-top-mobile.svg);
+    width: 100%;
+    height: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .footer-subscription{
+    display:block;
+    width: 100%;
+    height: auto;
+    margin-top: 30px
+  } 
+  .subscribe-btn{
+    margin-right: -60px;
+    margin-left: 160px;
+    margin-top: 20px;
+    
+  }
+  #grow-together-bg-top,
+  #your-users-bg-top,
+  #grow-together-bg-bottom,
+  #your-users-bg-bottom {
+    display: none;
   }
 }
 
