@@ -472,19 +472,21 @@ div.footer-division-1 > path {
     background-image: url("./images/bg-section-top-mobile-1.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 244%;
+  }
+  #grow-together-bg-top-mobile {
+    top: 1480px;
   }
   #grow-together-bg-bottom-mobile {
     background-image: url("./images/bg-section-bottom-mobile-1.svg");
-    top: 348%;
+    top: 2110px;
   }
   #your-users-bg-top-mobile {
     background-image: url("./images/bg-section-top-mobile-2.svg");
-    top: 456%;
+    top: 2770px;
   }
   #your-users-bg-bottom-mobile {
     background-image: url("./images/bg-section-bottom-mobile-2.svg");
-    top: 558%;
+    top: 3400px;
   }
 
   div.diagram-container-mobile {
@@ -563,63 +565,62 @@ div.footer-division-1 > path {
     flex-flow: column-reverse wrap;
     height: auto;
     text-align: justify;
-      /* padding-left: 30px;
+    /* padding-left: 30px;
       padding-right: 0px;  */
   }
-  div.footer-container > div{
+  div.footer-container > div {
     width: 80%;
     margin: 30px;
-}
-  .footer-division-2 > div{
-     display: flex; 
-     flex-flow: row-reverse wrap;
+  }
+  .footer-division-2 > div {
+    display: flex;
+    flex-flow: row-reverse wrap;
     text-align: justify;
     font-size: 23px;
     font-weight: 400;
     margin-bottom: 120px;
   }
-  .footer-division-1 > div{
-    text-align: justify;  
+  .footer-division-1 > div {
+    text-align: justify;
     font-size: 23px;
   }
   .footer-logo {
     padding-top: 7rem;
     color: #fff;
   }
-  svg.fl-bg{
-    padding-top:7rem ;
+  svg.fl-bg {
+    padding-top: 7rem;
   }
-  .footer-heading{
+  .footer-heading {
     text-align: justify;
     margin-left: 0;
   }
   .footer-cta-section {
     width: 100%;
     height: 15.1rem;
-    padding-top: 1rem; 
+    padding-top: 1rem;
     line-height: 2;
   }
-  #footer-bg-top{
+  #footer-bg-top {
     display: none;
   }
-  #footer-bg-top-mobile{
+  #footer-bg-top-mobile {
     background-image: url(./images/bg-footer-top-mobile.svg);
     width: 100%;
     height: 5rem;
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .footer-subscription{
-    display:block;
+  .footer-subscription {
+    display: block;
     width: 100%;
     height: auto;
-    margin-top: 30px
-  } 
-  .subscribe-btn{
+    margin-top: 30px;
+  }
+  .subscribe-btn {
     margin-right: -60px;
     margin-left: 160px;
     margin-top: 20px;
-    
   }
   #grow-together-bg-top,
   #your-users-bg-top,
