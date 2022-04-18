@@ -172,14 +172,15 @@ div.hero-section > img {
 .your-users-section > div img {
   width: 40rem;
   height: 40rem;
-  padding: 6rem 4rem;
-  margin-right: 5rem;
+  /* padding: 6rem 4rem;
+  margin-right: 5rem; */
+  margin: 0;
 }
 
 .grow-together-text,
 .your-users-section-text {
   width: 37.14rem;
-  height: 11rem;
+  height: 10rem;
   margin: 14rem auto;
 }
 .grow-together-section,
@@ -190,24 +191,27 @@ div.hero-section > img {
   z-index: 3;
   position: relative;
 }
-.your-users-section {
-  margin-top: -20rem;
-}
+
 .grow-together-container,
 .your-users-section-container {
   width: 100%;
   background-color: var(--bluegrey);
-  margin: 0 auto;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rem 0;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
 }
 #grow-together-bg-top,
 #your-users-bg-top {
-  height: 120px;
   width: 100%;
+  height: 340px;
   background-image: url("./images/bg-section-top-desktop-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  left: 0;
+  position: absolute;
   z-index: 2;
   display: block;
   margin: 0 auto;
@@ -215,31 +219,31 @@ div.hero-section > img {
 
 #grow-together-bg-top {
   background-image: url("./images/bg-section-top-desktop-1.svg");
-  top: 9.5rem;
+  top: 1620px;
 }
 
 #your-users-bg-top {
   position: absolute;
-  top: 228rem;
+  top: 3400px;
 }
 
 #grow-together-bg-bottom,
 #your-users-bg-bottom {
-  height: 9rem;
   width: 100%;
+  height: 9rem;
   background-image: url("./images/bg-section-bottom-desktop-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  left: 0;
-  top: 650px;
+  position: absolute;
   z-index: 2;
   display: block;
   margin: 0 auto;
 }
-
+#grow-together-bg-bottom {
+  top: 2490px;
+}
 #your-users-bg-bottom {
-  top: 29rem;
+  top: 4150px;
 }
 .flowing-conversation-container {
   width: 100%;
@@ -270,12 +274,13 @@ div.hero-section > img {
 }
 
 .cta-section {
-  width: 49rem;
+  width: 80%;
   height: 13rem;
   margin: 20rem auto;
   margin-bottom: 12rem;
   text-align: center;
 }
+
 footer {
   font-family: roboto;
   font-weight: 300;
@@ -340,13 +345,6 @@ div.footer-division-1 > path {
 .grow-together-text-mobile,
 .your-users-section-text-mobile,
 .flowing-conversation-text-mobile {
-  display: none;
-}
-
-#grow-together-bg-top,
-#your-users-bg-top,
-#grow-together-bg-bottom,
-#your-users-bg-bottom {
   display: none;
 }
 
@@ -415,7 +413,7 @@ div.footer-division-1 > path {
     margin-top: 6rem;
   }
   .hero-section {
-    width: 100%;
+    width: 90%;
     height: 60rem;
     margin: 0 auto;
     text-align: center;
@@ -466,10 +464,30 @@ div.footer-division-1 > path {
     height: auto;
     margin: 0 auto;
   }
-  .grow-together-bg-top-mobile {
+  #grow-together-bg-top-mobile,
+  #grow-together-bg-bottom-mobile,
+  #your-users-bg-top-mobile,
+  #your-users-bg-bottom-mobile {
+    width: 100%;
+    height: 240px;
     background-image: url("./images/bg-section-top-mobile-1.svg");
+    background-repeat: no-repeat;
     position: absolute;
+    top: 244%;
   }
+  #grow-together-bg-bottom-mobile {
+    background-image: url("./images/bg-section-bottom-mobile-1.svg");
+    top: 348%;
+  }
+  #your-users-bg-top-mobile {
+    background-image: url("./images/bg-section-top-mobile-2.svg");
+    top: 456%;
+  }
+  #your-users-bg-bottom-mobile {
+    background-image: url("./images/bg-section-bottom-mobile-2.svg");
+    top: 558%;
+  }
+
   div.diagram-container-mobile {
     width: 100%;
     display: flex;
@@ -528,7 +546,9 @@ div.footer-division-1 > path {
   }
 
   .flowing-conversation-section,
-  .flowing-conversation-container {
+  .flowing-conversation-container,
+  .grow-together-container,
+  .your-users-section-container {
     display: none;
   }
 
@@ -584,8 +604,12 @@ div.footer-division-1 > path {
     margin-top: 10px;
     
   }
-
-
+  #grow-together-bg-top,
+  #your-users-bg-top,
+  #grow-together-bg-bottom,
+  #your-users-bg-bottom {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 460px) and (max-width: 801px) {
