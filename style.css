@@ -545,17 +545,17 @@ div.footer-division-1 > path {
     height: fit-content;
     text-align: justify;
     font-size: 25px;
-    align-items: flex-start;
       padding-left: 30px;
       padding-right: 0px; 
   }
-  .footer-division-2{
-    display: flex;
+  .footer-division-2 > div{
+    /* display: flex; */
     flex-flow: row-reverse wrap;
     text-align: justify;
     font-size: 23px;
     font-weight: 400;
-    margin-top: -20px;
+    margin-top: -40px;
+    margin-left: -130px;
   }
   .footer-division-1 > div{
     text-align: justify;  
