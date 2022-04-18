@@ -40,7 +40,7 @@ header {
   height: auto;
 }
 nav {
-  width: 90%;
+  width: 93rem;
   height: 3rem;
   margin: 2.1rem auto;
 }
@@ -156,9 +156,6 @@ div.hero-section > img {
   width: 68rem;
   height: 42rem;
   margin: 100px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .diagram-stats {
   font-size: 6rem;
@@ -175,14 +172,15 @@ div.hero-section > img {
 .your-users-section > div img {
   width: 40rem;
   height: 40rem;
-  padding: 6rem 4rem;
-  margin-right: 5rem;
+  /* padding: 6rem 4rem;
+  margin-right: 5rem; */
+  margin: 0;
 }
 
 .grow-together-text,
 .your-users-section-text {
   width: 37.14rem;
-  height: 11rem;
+  height: 10rem;
   margin: 14rem auto;
 }
 .grow-together-section,
@@ -193,28 +191,27 @@ div.hero-section > img {
   z-index: 3;
   position: relative;
 }
-/* .your-users-section {
-  margin-top: -20rem;
-} */
+
 .grow-together-container,
 .your-users-section-container {
   width: 100%;
-  height: 450px;
   background-color: var(--bluegrey);
-  /* margin: 0 auto; */
+  height: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20rem 0;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
 }
 #grow-together-bg-top,
 #your-users-bg-top {
-  height: 120px;
   width: 100%;
+  height: 340px;
   background-image: url("./images/bg-section-top-desktop-1.svg");
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  position: relative;
-  left: 0;
+  background-size: cover;
+  position: absolute;
   z-index: 2;
   display: block;
   margin: 0 auto;
@@ -222,34 +219,31 @@ div.hero-section > img {
 
 #grow-together-bg-top {
   background-image: url("./images/bg-section-top-desktop-1.svg");
-  top: 10rem;
-  width: 100%;
+  top: 1620px;
 }
 
 #your-users-bg-top {
   position: absolute;
-  top: 240rem;
-  width: 100%;
+  top: 3400px;
 }
 
 #grow-together-bg-bottom,
 #your-users-bg-bottom {
-  height: 9rem;
   width: 100%;
+  height: 9rem;
   background-image: url("./images/bg-section-bottom-desktop-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  left: 0;
+  position: absolute;
   z-index: 2;
   display: block;
   margin: 0 auto;
 }
 #grow-together-bg-bottom {
-  top: 540px;
+  top: 2490px;
 }
 #your-users-bg-bottom {
-  top: 29rem;
+  top: 4150px;
 }
 .flowing-conversation-container {
   width: 100%;
@@ -280,28 +274,24 @@ div.hero-section > img {
 }
 
 .cta-section {
-  width: 60%;
+  width: 80%;
   height: 13rem;
-  margin: 10rem auto;
+  margin: 20rem auto;
   margin-bottom: 12rem;
   text-align: center;
 }
+
 footer {
   font-family: roboto;
   font-weight: 300;
   font-size: 1rem;
-  display: flex;
-  justify-content: center;
 }
-
 div.footer-container {
-  width: 100%;
-  height: 40rem;
   background-color: var(--darkgreen);
   color: var(--white);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 40rem;
   margin: 0 auto;
 }
 
@@ -312,14 +302,15 @@ div.footer-container {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  left: 0%;
+  top: 90%;
   z-index: 4;
+  display: block;
   margin: 0 auto;
-  margin-bottom: -40px;
 }
 
 div.footer-container > div {
-  width: 345px;
-  height: 345px;
+  width: 40%;
   margin: 10rem;
 }
 
@@ -357,13 +348,6 @@ div.footer-division-1 > path {
   display: none;
 }
 
-#grow-together-bg-top-mobile,
-#your-users-bg-top-mobile,
-#grow-together-bg-bottom-mobile,
-#your-users-bg-bottom-mobile {
-  display: none;
-}
-
 @media only screen and (min-width: 375px) and (max-width: 990px) {
   html {
     font-size: 14px;
@@ -386,11 +370,6 @@ div.footer-division-1 > path {
   nav {
     width: 90%;
     height: 3rem;
-  }
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   /* 2. Typography */
 
@@ -433,8 +412,8 @@ div.footer-division-1 > path {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-top: 6rem;
   }
-  div.hero-section {
-    width: 100%;
+  .hero-section {
+    width: 90%;
     height: 60rem;
     margin: 0 auto;
     text-align: center;
@@ -567,14 +546,16 @@ div.footer-division-1 > path {
   }
 
   .flowing-conversation-section,
-  .flowing-conversation-container {
+  .flowing-conversation-container,
+  .grow-together-container,
+  .your-users-section-container {
     display: none;
   }
 
   .cta-section {
     width: 100%;
     height: 13rem;
-    margin: 0rem auto;
+    margin: 10rem auto;
     margin-bottom: 12rem;
     text-align: center;
   }
@@ -593,6 +574,12 @@ div.footer-division-1 > path {
     padding: 0 20px;
     font-family: roboto, sans-serif;
     font-weight: 300;
+  }
+  #grow-together-bg-top,
+  #your-users-bg-top,
+  #grow-together-bg-bottom,
+  #your-users-bg-bottom {
+    display: none;
   }
 }
 
