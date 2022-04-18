@@ -473,19 +473,19 @@ div.footer-division-1 > path {
     background-image: url("./images/bg-section-top-mobile-1.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 244%;
+    top: 1480px;
   }
   #grow-together-bg-bottom-mobile {
     background-image: url("./images/bg-section-bottom-mobile-1.svg");
-    top: 348%;
+    top: 2120px;
   }
   #your-users-bg-top-mobile {
     background-image: url("./images/bg-section-top-mobile-2.svg");
-    top: 456%;
+    top: 2760px;
   }
   #your-users-bg-bottom-mobile {
     background-image: url("./images/bg-section-bottom-mobile-2.svg");
-    top: 558%;
+    top: 3400px;
   }
 
   div.diagram-container-mobile {
@@ -566,10 +566,10 @@ div.footer-division-1 > path {
     text-align: justify;
     font-size: 25px;
     align-items: flex-start;
-      padding-left: 30px;
-      padding-right: 0px; 
+    padding-left: 30px;
+    padding-right: 0px;
   }
-  .footer-division-2{
+  .footer-division-2 {
     display: flex;
     flex-flow: row-reverse wrap;
     text-align: justify;
@@ -577,32 +577,31 @@ div.footer-division-1 > path {
     font-weight: 400;
     margin-top: -20px;
   }
-  .footer-division-1 > div{
-    text-align: justify;  
+  .footer-division-1 > div {
+    text-align: justify;
     font-size: 23px;
     margin-left: -130px;
     margin-top: -15px;
   }
-  .footer-heading{
+  .footer-heading {
     text-align: justify;
     margin-left: 0;
   }
-  #footer-bg-top{
+  #footer-bg-top {
     display: none;
   }
-  #footer-bg-top-mobile{
+  #footer-bg-top-mobile {
     background-image: url(./images/bg-footer-top-mobile.svg);
     width: 100%;
     height: 5rem;
     background-size: cover;
     background-repeat: no-repeat;
   }
- 
-  .subscribe-btn{
+
+  .subscribe-btn {
     margin-right: -60px;
     margin-left: 160px;
     margin-top: 10px;
-    
   }
   #grow-together-bg-top,
   #your-users-bg-top,
