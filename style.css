@@ -569,20 +569,7 @@ div.footer-division-1 > path {
     padding-left: 30px;
     padding-right: 0px;
   }
-  .footer-division-2 {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    text-align: justify;
-    font-size: 23px;
-    font-weight: 400;
-    margin-top: -20px;
-  }
-  .footer-division-1 > div {
-    text-align: justify;
-    font-size: 23px;
-    margin-left: -130px;
-    margin-top: -15px;
-  }
+
   .footer-heading {
     text-align: justify;
     margin-left: 0;
