@@ -572,15 +572,15 @@ div.footer-division-1 > path {
     /* display: flex; */
     flex-flow: row-reverse wrap;
     text-align: justify;
-    font-size: 23px;
+    /* font-size: 23px; */
     font-weight: 400;
     margin-top: -40px;
-    margin-left: -130px;
+    margin-left: -160px;
   }
   .footer-division-1 > div{
     text-align: justify;  
     font-size: 23px;
-    margin-left: -130px;
+    margin-left: -160px;
     margin-top: -15px;
   }
   .footer-heading{
