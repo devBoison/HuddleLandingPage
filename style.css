@@ -584,6 +584,10 @@ div.footer-division-1 > path {
   }
   .footer-logo {
     padding-top: 7rem;
+    color: #fff;
+  }
+  svg.fl-bg{
+    padding-top:7rem ;
   }
   .footer-heading{
     text-align: justify;
