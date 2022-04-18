@@ -544,8 +544,10 @@ div.footer-division-1 > path {
     flex-flow: column-reverse wrap;
     height: fit-content;
     text-align: justify;
-    font-size: 3rem;
-    
+    font-size: 25px;
+    align-items: flex-start;
+      padding-left: 30px;
+      padding-right: 0px; 
   }
   .footer-division-2{
     display: flex;
@@ -553,11 +555,13 @@ div.footer-division-1 > path {
     text-align: justify;
     font-size: 23px;
     font-weight: 400;
+    margin-top: -20px;
   }
-  .footer-division-1{
-    font-size: 16px;
-    text-align: justify;
-    margin: 0;
+  .footer-division-1 > div{
+    text-align: justify;  
+    font-size: 23px;
+    margin-left: -130px;
+    margin-top: -15px;
   }
   .footer-heading{
     text-align: justify;
@@ -572,6 +576,13 @@ div.footer-division-1 > path {
     height: 5rem;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+ 
+  .subscribe-btn{
+    margin-right: -60px;
+    margin-left: 160px;
+    margin-top: 10px;
+    
   }
 
 
