@@ -1,6 +1,6 @@
 # HuddleLandingPage
 Huddle Landing Page first Html/CSS portfolio project >>> 
-Contributions by @devBoison and @Blackboyy, our challenge is to build  Huddle Landing Page: 
+Contributions by @devBoison and @Blackboyy, our challenge was to build  Huddle Landing Page: 
 https://github.com/devBoison/HuddleLandingPage/blob/main/huddle-landing-page-with-curved-sections-master/design/desktop-design.jpg 
 And to get it looking as close as possible, with optimizations for mobile view.
 Our final work is deployed via: https://hurdleland.netlify.app/
