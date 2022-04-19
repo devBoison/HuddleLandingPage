@@ -125,15 +125,15 @@ button.btn-primary {
   border-radius: 4px;
 }
 .subscribe-input {
-  width: 48%;
+  width: 60%
   height: 48px;
   background-color: var(--white);
   padding-left: 1rem;
 }
 .subscribe-btn {
   color: var(--white);
-  width: 20%;
-  margin-left: 120px;
+  width: 30%;
+  margin-left: 30px;
 }
 
 button {
@@ -351,7 +351,7 @@ div.footer-container > div {
   display: none;
 }
 .subscribe-btn {
-  margin-left: 0;
+  margin-left: 64px;
   margin-top: 20px;
   color: var(--white);
   width: 40%;
