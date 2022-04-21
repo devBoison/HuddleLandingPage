@@ -18,7 +18,7 @@ Our final work is deployed via: https://hurdleland.netlify.app/
   + JAVASCRIPT
 
 ## How to use
-To use or view ####HudleLandingPage codebase, 
+To use or view #### HudleLandingPage codebase, 
   1. Simply, head over to the repository
   2. Click the clone button to create a local copy
   3. Run the index.html file in your preferred browser.
