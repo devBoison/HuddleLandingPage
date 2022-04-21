@@ -2,7 +2,7 @@
 
   ## Description
   Huddle Landing Page is a portfolio website landing page with surved sections optimized for mobile 375px & 480px. our challenge was to build  Huddle Landing Page: 
-![Use Case Diagram](./HuddleLandingPage/blob/main/huddle-landing-page-with-curved-sections-master/design/desktop-design.jpg)
+![huddle desktop design](huddle-landing-page-with-curved-sections-master/design/desktop-design.jpg)
 
 And to get it looking as close as possible, with optimizations for mobile view.
 Our final work is deployed via: https://hurdleland.netlify.app/
