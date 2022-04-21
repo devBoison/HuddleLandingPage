@@ -8,7 +8,7 @@ Our final work is deployed via: https://hurdleland.netlify.app/
 
   
 ## Contributions
-  + devBoison:https://github.com/devBoison
+  + devBoison: https://github.com/devBoison
   + Blackboy: https://github.com/ENBEM-1
 
 ## Technologies: 
